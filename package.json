@@ -1,0 +1,29 @@
+{
+  "name": "devlog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx @11ty/eleventy --serve --input=src --output=_site",
+    "build": "npx @11ty/eleventy --input=src --output=_site",
+    "start": "npm run build && npx http-server _site -p 8080"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TaMiXAlter/TaMiDevLog.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/TaMiXAlter/TaMiDevLog/issues"
+  },
+  "homepage": "https://github.com/TaMiXAlter/TaMiDevLog#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.2"
+  },
+  "dependencies": {
+    "luxon": "^3.7.1"
+  }
+}

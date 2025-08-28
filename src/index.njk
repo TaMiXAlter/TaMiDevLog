@@ -1,0 +1,17 @@
+---
+layout: layouts/base.njk
+title: 首頁
+---
+<h2>最新 devlog</h2>
+
+<ul>
+  {% for post in collections.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.data.title }}</a>
+      <small> — {{ post.date | date("yyyy-LL-dd") }}</small>
+      {% if post.data.excerpt %}
+        <p>{{ post.data.excerpt }}</p>
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>
