@@ -1,22 +1,22 @@
 {
-  "title": "Your Blog Name",
-  "url": "https://example.com/",
-  "language": "en",
-  "description": "I am writing about my experiences as a naval navel-gazer.",
+  "title": "TaMi DevLog",
+  "url": "https://tami-devlog.vercel.app/",
+  "language": "zh-tw",
+  "description": "I am writing DevLog of my game.",
   "feed": {
-    "subtitle": "I am writing about my experiences as a naval navel-gazer.",
+    "subtitle": "I am writing DevLog of my game.",
     "filename": "feed.xml",
     "path": "/feed/feed.xml",
-    "id": "https://example.com/"
+    "id": "https://tami-devlog.vercel.app/"
   },
   "jsonfeed": {
     "path": "/feed/feed.json",
     "url": "https://example.com/feed/feed.json"
   },
   "author": {
-    "name": "Your Name Here",
-    "email": "youremailaddress@example.com",
-    "url": "https://example.com/about-me/"
+    "name": "TaMi",
+    "email": "gary321588@gmail.com",
+    "url": "https://tami-devlog.vercel.app/"
   },
   "nav": [{
     "title": "home",
@@ -33,14 +33,6 @@
   {
     "title": "contact",
     "url": "/contact"
-  },
-  {
-    "title": "rss",
-    "url": "/feed/feed.xml"
-  },
-  {
-    "title": "search",
-    "url": "/search"
   }],
   "config": {
     "showDateList": true,
