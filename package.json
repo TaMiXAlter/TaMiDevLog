@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "node node_modules/@11ty/eleventy/cmd.js --serve --input=src --output=_site",
-    "build": "node node_modules/@11ty/eleventy/cmd.js --input=src --output=_site"
+    "dev": "eleventy --serve --input=src --output=_site",
+    "build": "eleventy --input=src --output=_site"
   },
   "repository": {
     "type": "git",
@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/TaMiXAlter/TaMiDevLog#readme",
   "devDependencies": {
-    "@11ty/eleventy": "^3.1.2"
+    "@11ty/eleventy": "^2.0.1"
   },
   "dependencies": {
     "luxon": "^3.7.1"
