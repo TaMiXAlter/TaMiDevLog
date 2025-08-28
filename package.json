@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "npx @11ty/eleventy --serve --input=src --output=_site",
-    "build": "npx @11ty/eleventy --input=src --output=_site",
-    "start": "npm run build && npx http-server _site -p 8080"
+    "build": "npx @11ty/eleventy --input=src --output=_site"
   },
   "repository": {
     "type": "git",
