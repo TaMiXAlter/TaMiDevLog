@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "npx @11ty/eleventy --serve --input=src --output=_site",
-    "build": "npx @11ty/eleventy --input=src --output=_site"
+    "dev": "node node_modules/@11ty/eleventy/cmd.js --serve --input=src --output=_site",
+    "build": "node node_modules/@11ty/eleventy/cmd.js --input=src --output=_site"
   },
   "repository": {
     "type": "git",
