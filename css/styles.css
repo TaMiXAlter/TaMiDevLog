@@ -1,1 +1,271 @@
-html{  max-width: 900px;width: 90%;margin:0 auto;background-color:#282a36;color:#ffffff}body{line-height:1.6;font-size:18px;margin:1em auto;padding:0 .55em}header{display:flex}header ul{float:right}header span{list-style-type:none;display:inline;padding:0 .2rem 0 .2rem;vertical-align:middle}a{text-decoration:none;color:#bd93f9}.tag,time.post{color:#fff;text-transform:uppercase;font-size:10.5px;border:#fff solid .5px;border-radius:2px;padding:4px;margin-right:5px}ul.nav{list-style:none;padding-left:0}h1.title{margin-bottom:-10px}pre,code{background-color:#44475a;color:#fff;border-radius:5px;padding:5px;font-size:12px;overflow-x:auto;width:90%;margin: auto;}.inserted-sign{background-color:hsl(126,31%,39%)}.token.prefix.inserted,.token.prefix.deleted{background-color:#15202b}.deleted-sign{background-color:hsl(0,51%,37%)}mark{background-color:#f1fa8c}.post-nav-next{float:right}blockquote{background-color:#44475a;border-left:10px solid #ccc;margin:1.5em 10px;padding:.5em 10px}blockquote p{display:inline}
+ @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            max-width: 900px;
+            width: 90%;
+            margin: 0 auto;
+            background: linear-gradient(135deg, #1a1b26 0%, #24273a 50%, #282a36 100%);
+            color: #f8f8f2;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            min-height: 100vh;
+        }
+
+        body {
+            line-height: 1.7;
+            font-size: 18px;
+            margin: 2em auto;
+            padding: 0 1.5em;
+            background: rgba(255, 255, 255, 0.02);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2rem 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            margin-bottom: 2rem;
+        }
+
+        header ul {
+            display: flex;
+            gap: 0.5rem;
+            list-style: none;
+        }
+
+        header span {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            vertical-align: middle;
+            transition: all 0.3s ease;
+            border-radius: 8px;
+        }
+
+        header span:hover {
+            background: rgba(189, 147, 249, 0.1);
+            transform: translateY(-2px);
+        }
+
+        a {
+            text-decoration: none;
+            color: #bd93f9;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        a:hover {
+            color: #ff79c6;
+            transform: translateY(-1px);
+        }
+
+        a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -2px;
+            left: 0;
+            background: linear-gradient(90deg, #bd93f9, #ff79c6);
+            transition: width 0.3s ease;
+        }
+
+        a:hover::after {
+            width: 100%;
+        }
+
+        .tag, time.post {
+            color: #f8f8f2;
+            text-transform: uppercase;
+            font-size: 11px;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            background: linear-gradient(135deg, #6272a4, #8be9fd);
+            border: none;
+            border-radius: 12px;
+            padding: 6px 12px;
+            margin-right: 8px;
+            display: inline-block;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 8px rgba(139, 233, 253, 0.2);
+        }
+
+        .tag:hover, time.post:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 16px rgba(139, 233, 253, 0.3);
+        }
+
+        ul.nav {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        h1.title {
+            margin-bottom: 1rem;
+            font-weight: 700;
+            font-size: 2.5rem;
+            background: linear-gradient(135deg, #bd93f9, #ff79c6, #8be9fd);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-shadow: 0 0 30px rgba(189, 147, 249, 0.5);
+        }
+
+        pre, code {
+            background: linear-gradient(135deg, #44475a, #3a3d4a);
+            color: #f8f8f2;
+            border-radius: 12px;
+            padding: 1.5rem;
+            font-size: 14px;
+            overflow-x: auto;
+            width: 100%;
+            margin: 1.5rem 0;
+            font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+            border: 1px solid rgba(98, 114, 164, 0.3);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            position: relative;
+        }
+
+        pre::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #bd93f9, #ff79c6, #8be9fd);
+            border-radius: 12px 12px 0 0;
+        }
+
+        .inserted-sign {
+            background-color: rgba(80, 250, 123, 0.3);
+            border-left: 3px solid #50fa7b;
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+
+        .token.prefix.inserted, .token.prefix.deleted {
+            background-color: rgba(21, 32, 43, 0.8);
+            border-radius: 4px;
+            padding: 2px 4px;
+        }
+
+        .deleted-sign {
+            background-color: rgba(255, 85, 85, 0.3);
+            border-left: 3px solid #ff5555;
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+
+        mark {
+            background: linear-gradient(135deg, #f1fa8c, #ffb86c);
+            color: #282a36;
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-weight: 500;
+        }
+
+        .post-nav-next {
+            float: right;
+            background: linear-gradient(135deg, #6272a4, #bd93f9);
+            padding: 0.8rem 1.5rem;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(98, 114, 164, 0.3);
+        }
+
+        .post-nav-next:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(98, 114, 164, 0.4);
+        }
+
+        blockquote {
+            background: linear-gradient(135deg, rgba(68, 71, 90, 0.8), rgba(98, 114, 164, 0.1));
+            border-left: 4px solid #bd93f9;
+            margin: 2rem 0;
+            padding: 1.5rem 2rem;
+            border-radius: 12px;
+            position: relative;
+            backdrop-filter: blur(5px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+        }
+
+        blockquote::before {
+            content: '"';
+            font-size: 4rem;
+            color: rgba(189, 147, 249, 0.3);
+            position: absolute;
+            top: -10px;
+            left: 20px;
+            font-family: Georgia, serif;
+        }
+
+        blockquote p {
+            display: block;
+            margin: 0;
+            font-style: italic;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* 新增的美化元素 */
+        .content-wrapper {
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* 滾動條美化 */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: rgba(68, 71, 90, 0.3);
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(135deg, #bd93f9, #ff79c6);
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(135deg, #ff79c6, #8be9fd);
+        }
+
+        /* 響應式設計 */
+        @media (max-width: 768px) {
+            body {
+                padding: 0 1rem;
+                margin: 1em auto;
+            }
+            
+            header {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            h1.title {
+                font-size: 2rem;
+                text-align: center;
+            }
+        }
