@@ -40,7 +40,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* 小標題使用不同字體 */
-h4, h5, h6 {
+h3, h4, h5, h6 {
     font-family: 'Zen Maru Gothic', monospace;
     color: #ffb574;
 }
@@ -51,7 +51,7 @@ h1:first-child, h2:first-child, h3:first-child {
 
 h1 {
     font-size: 2.5rem;
-    font-weight: 700;
+    font-weight: 100;
     margin-bottom: 2rem;
 }
 
@@ -116,7 +116,7 @@ header .logo {
 
 header .logo:hover {
     transform: scale(1.05);
-    color: #66d9ef;
+    color: #e6520d;
 }
 
 header span:hover {
@@ -185,7 +185,7 @@ ul.nav {
 /* 標題樣式 */
 h1.title {
     margin-bottom: 1rem;
-    font-weight: 700;
+    font-weight: 100;
     font-size: 2.5rem;
     color: #66d9ef;
     font-family: 'Dela Gothic One', 'Zen Maru Gothic', monospace;
