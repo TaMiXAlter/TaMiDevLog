@@ -22,7 +22,7 @@
   <body>
     <header>
       {%- for entry in metadata.nav %}
-        <span class="{% if entry.url == page.url %} active{% endif %}"><a href="{{ entry.url | url }}">{{ entry.title }}</a>{% if not loop.last %} - {% endif %}</span>
+        <span class="{% if entry.url == page.url %} active{% endif %}">-<a href="{{ entry.url | url }}">{{ entry.title }}</a>{% if not loop.last %} -{% endif %}</span>
       {%- endfor %}
     </header>
 
