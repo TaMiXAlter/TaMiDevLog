@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=LXGW+Marker+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300;400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=WDXL+Lubrifont+TC:wght@400;700&display=swap');
 
 * {
@@ -12,9 +12,9 @@ html {
     max-width: 900px;
     width: 90%;
     margin: 0 auto;
-    background: linear-gradient(135deg, #1a1b26 0%, #24273a 50%, #282a36 100%);
-    color: #f8f8f2;
-    font-family: 'WDXL Lubrifont TC', 'LXGW Marker Gothic', monospace;
+    background: linear-gradient(135deg, #0f1419 0%, #1a2332 50%, #243447 100%);
+    color: #e6fffa;
+    font-family: 'WDXL Lubrifont TC', 'Zen Maru Gothic', monospace;
     min-height: 100vh;
 }
 
@@ -23,25 +23,27 @@ body {
     font-size: 16px;
     margin: 2em auto;
     padding: 2rem 2rem 3rem 2rem;
-    background: rgba(255, 255, 255, 0.02);
+    background: rgba(102, 217, 239, 0.03);
     border-radius: 20px;
     backdrop-filter: blur(10px);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    font-family: 'WDXL Lubrifont TC', 'LXGW Marker Gothic', monospace;
+    border: 1px solid rgba(102, 217, 239, 0.1);
+    font-family: 'WDXL Lubrifont TC', 'Zen Maru Gothic', monospace;
+    color: #e6fffa;
 }
 
 /* 標題間距優化 */
 h1, h2, h3, h4, h5, h6 {
     margin: 2.5rem 0 1.5rem 0;
     font-weight: 700;
-    color: #f8f8f2;
-    font-family: 'Dela Gothic One', 'LXGW Marker Gothic', monospace;
+    color: #66d9ef;
+    font-family: 'Dela Gothic One', 'Zen Maru Gothic', monospace;
 }
 
 /* 小標題使用不同字體 */
 h4, h5, h6 {
-    font-family: 'LXGW Marker Gothic', monospace;
+    font-family: 'Zen Maru Gothic', monospace;
+    color: #ffb574;
 }
 
 h1:first-child, h2:first-child, h3:first-child {
@@ -107,8 +109,8 @@ header {
 header .logo {
     font-size: 2rem;
     font-weight: 700;
-    font-family: 'Dela Gothic One', 'LXGW Marker Gothic', monospace;
-    background: linear-gradient(135deg, #bd93f9, #ff79c6, #8be9fd);
+    font-family: 'Dela Gothic One', 'Zen Maru Gothic', monospace;
+    background: linear-gradient(135deg, #66d9ef, #ffb574);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -121,20 +123,20 @@ header .logo:hover {
 }
 
 header span:hover {
-    background: rgba(189, 147, 249, 0.1);
+    background: rgba(102, 217, 239, 0.1);
     transform: translateY(-2px);
 }
 
 /* 連結樣式 */
 a {
     text-decoration: none;
-    color: #bd93f9;
+    color: #66d9ef;
     transition: all 0.3s ease;
     position: relative;
 }
 
 a:hover {
-    color: #ff79c6;
+    color: #ffb574;
     transform: translateY(-1px);
 }
 
@@ -145,7 +147,7 @@ a::after {
     height: 2px;
     bottom: -2px;
     left: 0;
-    background: linear-gradient(90deg, #bd93f9, #ff79c6);
+    background: linear-gradient(90deg, #66d9ef, #ffb574);
     transition: width 0.3s ease;
 }
 
@@ -155,24 +157,24 @@ a:hover::after {
 
 /* 標籤和時間樣式 */
 .tag, time.post {
-    color: #f8f8f2;
+    color: #e6fffa;
     text-transform: uppercase;
     font-size: 11px;
     font-weight: 500;
     letter-spacing: 0.5px;
-    background: linear-gradient(135deg, #6272a4, #8be9fd);
+    background: linear-gradient(135deg, #66d9ef, #ffb574);
     border: none;
     border-radius: 12px;
     padding: 6px 12px;
     margin-right: 8px;
     display: inline-block;
     transition: all 0.3s ease;
-    box-shadow: 0 2px 8px rgba(139, 233, 253, 0.2);
+    box-shadow: 0 2px 8px rgba(102, 217, 239, 0.2);
 }
 
 .tag:hover, time.post:hover {
     transform: translateY(-2px);
-    box-shadow: 0 4px 16px rgba(139, 233, 253, 0.3);
+    box-shadow: 0 4px 16px rgba(102, 217, 239, 0.3);
 }
 
 /* 導航列表 */
@@ -187,11 +189,11 @@ h1.title {
     margin-bottom: 1rem;
     font-weight: 700;
     font-size: 2.5rem;
-    background: linear-gradient(135deg, #bd93f9, #ff79c6, #8be9fd);
+    background: linear-gradient(135deg, #66d9ef, #ffb574);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    font-family: 'Dela Gothic One', 'LXGW Marker Gothic', monospace;
+    font-family: 'Dela Gothic One', 'Zen Maru Gothic', monospace;
 }
 
 /* 程式碼區塊 */
@@ -260,8 +262,8 @@ pre::before {
 
 /* 標記文字 */
 mark {
-    background: linear-gradient(135deg, #f1fa8c, #ffb86c);
-    color: #282a36;
+    background: linear-gradient(135deg, #ffb574, #66d9ef);
+    color: #0f1419;
     padding: 2px 4px;
     border-radius: 4px;
     font-weight: 500;
@@ -271,23 +273,29 @@ mark {
 .about-section {
     margin-top: 4rem;
     padding: 2rem;
-    background: linear-gradient(135deg, rgba(68, 71, 90, 0.5), rgba(98, 114, 164, 0.1));
+    background: linear-gradient(135deg, rgba(102, 217, 239, 0.1), rgba(255, 181, 116, 0.1));
     border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(102, 217, 239, 0.2);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
 }
 
 .about-section h2 {
     margin-top: 0;
-    margin-bottom: 1.5rem;
-    color: #8be9fd;
-    font-family: 'Dela Gothic One', 'LXGW Marker Gothic', monospace;
+    margin-bottom: 1rem;
+    color: #66d9ef;
+    font-family: 'Dela Gothic One', 'Zen Maru Gothic', monospace;
 }
 
 .about-section p {
-    font-family: 'LXGW Marker Gothic', monospace;
+    font-family: 'Zen Maru Gothic', monospace;
     font-size: 15px;
-    line-height: 1.8;
+    line-height: 1.6;
+    margin: 0.8rem 0;
+    color: #e6fffa;
+}
+
+.about-section p:last-child {
+    margin-bottom: 0;
 }
 .post-nav-next {
     float: right;
@@ -390,12 +398,12 @@ hr {
 
 /* 強調文字 */
 strong, b {
-    color: #ff79c6;
+    color: #ffb574;
     font-weight: 600;
 }
 
 em, i {
-    color: #8be9fd;
+    color: #66d9ef;
     font-style: italic;
 }
 
