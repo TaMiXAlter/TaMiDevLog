@@ -3,16 +3,6 @@
   "url": "https://tami-devlog.vercel.app/",
   "language": "zh-tw",
   "description": "I am writing DevLog of my game.",
-  "feed": {
-    "subtitle": "I am writing DevLog of my game.",
-    "filename": "feed.xml",
-    "path": "/feed/feed.xml",
-    "id": "https://tami-devlog.vercel.app/"
-  },
-  "jsonfeed": {
-    "path": "/feed/feed.json",
-    "url": "https://example.com/feed/feed.json"
-  },
   "author": {
     "name": "TaMi",
     "email": "gary321588@gmail.com",
@@ -29,10 +19,6 @@
   {
     "title": "about",
     "url": "/about"
-  },
-  {
-    "title": "contact",
-    "url": "/contact"
   }],
   "config": {
     "showDateList": true,
