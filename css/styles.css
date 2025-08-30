@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300;400;500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=WDXL+Lubrifont+TC:wght@400;700&display=swap');
 
 * {
     box-sizing: border-box;
@@ -14,7 +13,7 @@ html {
     margin: 0 auto;
     background-color: #0f1419;
     color: #e6fffa;
-    font-family: 'WDXL Lubrifont TC', 'Zen Maru Gothic', monospace;
+    font-family:  'Zen Maru Gothic', monospace;
     min-height: 100vh;
 }
 
@@ -28,7 +27,7 @@ body {
     backdrop-filter: blur(10px);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
     border: 1px solid rgba(102, 217, 239, 0.1);
-    font-family: 'WDXL Lubrifont TC', 'Zen Maru Gothic', monospace;
+    font-family:  'Zen Maru Gothic', monospace;
     color: #e6fffa;
 }
 
@@ -110,14 +109,14 @@ header .logo {
     font-size: 2rem;
     font-weight: 700;
     font-family: 'Dela Gothic One', 'Zen Maru Gothic', monospace;
-    color: #66d9ef;
+    color:  #ffb574;
     transition: all 0.3s ease;
     text-decoration: none;
 }
 
 header .logo:hover {
     transform: scale(1.05);
-    color: #ffb574;
+    color: #66d9ef;
 }
 
 header span:hover {
@@ -197,7 +196,7 @@ pre, code {
     background-color: #1a2332;
     color: #e6fffa;
     border-radius: 12px;
-    font-family: 'WDXL Lubrifont TC', 'Zen Maru Gothic', monospace;
+    font-family:  'Zen Maru Gothic', monospace;
     border: 1px solid rgba(102, 217, 239, 0.3);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 }
@@ -465,7 +464,7 @@ article + article {
     body {
         padding: 1.5rem 2rem 2rem 2rem;
         margin: 1em auto;
-        font-size: 16px;
+        font-size: 19px;
     }
     
     header {
