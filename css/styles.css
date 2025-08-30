@@ -40,7 +40,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* 小標題使用不同字體 */
- h4, h5, h6 {
+ h3, h4, h5, h6 {
     font-family: 'Zen Maru Gothic', monospace;
     color: #e6fffa;
 }
