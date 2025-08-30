@@ -34,13 +34,13 @@ body {
 /* 標題間距優化 */
 h1, h2, h3, h4, h5, h6 {
     margin: 2.5rem 0 1.5rem 0;
-    font-weight: 700;
+    font-weight: 100;
     color: #66d9ef;
     font-family: 'Dela Gothic One', 'Zen Maru Gothic', monospace;
 }
 
 /* 小標題使用不同字體 */
-h3, h4, h5, h6 {
+ h4, h5, h6 {
     font-family: 'Zen Maru Gothic', monospace;
     color: #ffb574;
 }
