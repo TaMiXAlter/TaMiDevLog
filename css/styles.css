@@ -12,7 +12,7 @@ html {
     max-width: 900px;
     width: 90%;
     margin: 0 auto;
-    background: linear-gradient(135deg, #0f1419 0%, #1a2332 50%, #243447 100%);
+    background-color: #0f1419;
     color: #e6fffa;
     font-family: 'WDXL Lubrifont TC', 'Zen Maru Gothic', monospace;
     min-height: 100vh;
@@ -22,8 +22,8 @@ body {
     line-height: 1.8;
     font-size: 16px;
     margin: 2em auto;
-    padding: 2rem 2rem 3rem 2rem;
-    background: rgba(102, 217, 239, 0.03);
+    padding: 2rem 3rem 3rem 3rem;
+    background-color: rgba(102, 217, 239, 0.03);
     border-radius: 20px;
     backdrop-filter: blur(10px);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
@@ -110,16 +110,14 @@ header .logo {
     font-size: 2rem;
     font-weight: 700;
     font-family: 'Dela Gothic One', 'Zen Maru Gothic', monospace;
-    background: linear-gradient(135deg, #66d9ef, #ffb574);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #66d9ef;
     transition: all 0.3s ease;
     text-decoration: none;
 }
 
 header .logo:hover {
     transform: scale(1.05);
+    color: #ffb574;
 }
 
 header span:hover {
@@ -147,7 +145,7 @@ a::after {
     height: 2px;
     bottom: -2px;
     left: 0;
-    background: linear-gradient(90deg, #66d9ef, #ffb574);
+    background-color: #ffb574;
     transition: width 0.3s ease;
 }
 
@@ -157,12 +155,12 @@ a:hover::after {
 
 /* 標籤和時間樣式 */
 .tag, time.post {
-    color: #e6fffa;
+    color: #0f1419;
     text-transform: uppercase;
     font-size: 11px;
     font-weight: 500;
     letter-spacing: 0.5px;
-    background: linear-gradient(135deg, #66d9ef, #ffb574);
+    background-color: #66d9ef;
     border: none;
     border-radius: 12px;
     padding: 6px 12px;
@@ -175,6 +173,7 @@ a:hover::after {
 .tag:hover, time.post:hover {
     transform: translateY(-2px);
     box-shadow: 0 4px 16px rgba(102, 217, 239, 0.3);
+    background-color: #ffb574;
 }
 
 /* 導航列表 */
@@ -189,20 +188,17 @@ h1.title {
     margin-bottom: 1rem;
     font-weight: 700;
     font-size: 2.5rem;
-    background: linear-gradient(135deg, #66d9ef, #ffb574);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #66d9ef;
     font-family: 'Dela Gothic One', 'Zen Maru Gothic', monospace;
 }
 
 /* 程式碼區塊 */
 pre, code {
-    background: linear-gradient(135deg, #44475a, #3a3d4a);
-    color: #f8f8f2;
+    background-color: #1a2332;
+    color: #e6fffa;
     border-radius: 12px;
-    font-family: 'Silkscreen', 'JetBrains Mono', 'Fira Code', Consolas, monospace;
-    border: 1px solid rgba(98, 114, 164, 0.3);
+    font-family: 'WDXL Lubrifont TC', 'Zen Maru Gothic', monospace;
+    border: 1px solid rgba(102, 217, 239, 0.3);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 }
 
@@ -235,7 +231,7 @@ pre::before {
     left: 0;
     right: 0;
     height: 3px;
-    background: linear-gradient(90deg, #bd93f9, #ff79c6, #8be9fd);
+    background-color: #66d9ef;
     border-radius: 12px 12px 0 0;
 }
 
@@ -262,7 +258,7 @@ pre::before {
 
 /* 標記文字 */
 mark {
-    background: linear-gradient(135deg, #ffb574, #66d9ef);
+    background-color: #ffb574;
     color: #0f1419;
     padding: 2px 4px;
     border-radius: 4px;
@@ -273,7 +269,7 @@ mark {
 .about-section {
     margin-top: 4rem;
     padding: 2rem;
-    background: linear-gradient(135deg, rgba(102, 217, 239, 0.1), rgba(255, 181, 116, 0.1));
+    background-color: rgba(102, 217, 239, 0.08);
     border-radius: 12px;
     border: 1px solid rgba(102, 217, 239, 0.2);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
@@ -314,8 +310,8 @@ mark {
 
 /* 引用區塊 */
 blockquote {
-    background: linear-gradient(135deg, rgba(68, 71, 90, 0.8), rgba(98, 114, 164, 0.1));
-    border-left: 4px solid #bd93f9;
+    background-color: rgba(102, 217, 239, 0.08);
+    border-left: 4px solid #66d9ef;
     margin: 2.5rem 0;
     padding: 2rem 2.5rem;
     border-radius: 12px;
@@ -327,7 +323,7 @@ blockquote {
 blockquote::before {
     content: '"';
     font-size: 4rem;
-    color: rgba(189, 147, 249, 0.3);
+    color: rgba(102, 217, 239, 0.3);
     position: absolute;
     top: -10px;
     left: 20px;
@@ -391,9 +387,10 @@ tr:hover {
 hr {
     border: none;
     height: 2px;
-    background: linear-gradient(90deg, transparent, #bd93f9, transparent);
+    background-color: #66d9ef;
     margin: 3rem 0;
     border-radius: 1px;
+    opacity: 0.3;
 }
 
 /* 強調文字 */
@@ -446,17 +443,17 @@ article + article {
 }
 
 ::-webkit-scrollbar-track {
-    background: rgba(68, 71, 90, 0.3);
+    background: rgba(26, 35, 50, 0.3);
     border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: linear-gradient(135deg, #bd93f9, #ff79c6);
+    background-color: #66d9ef;
     border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(135deg, #ff79c6, #8be9fd);
+    background-color: #ffb574;
 }
 
 /* 響應式設計 */
@@ -466,7 +463,7 @@ article + article {
     }
     
     body {
-        padding: 1.5rem 1.5rem 2rem 1.5rem;
+        padding: 1.5rem 2rem 2rem 2rem;
         margin: 1em auto;
         font-size: 16px;
     }
