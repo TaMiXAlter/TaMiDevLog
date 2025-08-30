@@ -13,21 +13,27 @@
     <meta property="og:url" content="{{ metadata.url + page.url.slice(1) }}">
     <meta property="og:title" content="{{ title or metadata.title }}">
     <meta property="og:description" content="{{ description or metadata.description }}">
-
     <meta property="twitter:card" content="summary">
     <meta property="twitter:url" content="{{ metadata.url + page.url.slice(1) }}">
     <meta property="twitter:title" content="{{ title or metadata.title }}">
     <meta property="twitter:description" content="{{ description or metadata.description }}">
   </head>
   <body>
-    <header>
-      {%- for entry in metadata.nav %}
-        <span class="{% if entry.url == page.url %} active{% endif %}"><a href="{{ entry.url | url }}">{{ entry.title }}</a>{% if not loop.last %}{% endif %}</span>
-      {%- endfor %}
-    </header>
-
-    <main{% if templateClass %} class="{{ templateClass }}"{% endif %}>
-      {{ content | safe }}
-    </main>
+    <div class="content-wrapper">
+      <header>
+        <a href="{{ '/' | url }}" class="logo">TaMi DevLog</a>
+      </header>
+      <main{% if templateClass %} class="{{ templateClass }}"{% endif %}>
+        {{ content | safe }}
+        
+        {%- if page.url == '/' %}
+        <section class="about-section">
+          <h2>About Me</h2>
+          <p>這裡是關於我的介紹。我是一個喜歡寫程式和分享技術的開發者。歡迎來到我的部落格！</p>
+          <p>你可以在這裡找到我的技術文章、學習筆記和一些有趣的專案分享。</p>
+        </section>
+        {%- endif %}
+      </main>
+    </div>
   </body>
 </html>
