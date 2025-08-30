@@ -1,10 +1,9 @@
 ---
 layout: layouts/home.njk
 ---
-<p>Writing DevLog of my game</p>
-<h2>Recent Posts</h2>
-{% set maxPosts = collections.posts.length | min(3) %}
-{% set postslist = collections.posts | head(-3) %}
+<h2>最近發表</h2>
+{% set maxPosts = collections.posts.length | min(6) %}
+{% set postslist = collections.posts | head(-6) %}
 {% set postslistCounter = collections.posts | length %}
 {% include "postslist.njk" %}
-<p>More posts can be found in <a href="{{ '/posts/' | url }}">the archive</a>.</p>
+<p><a href="{{ '/posts/' | url }}">點我看更多文章</a>.</p>

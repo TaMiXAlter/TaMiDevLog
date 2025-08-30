@@ -9,15 +9,15 @@
     "url": "https://tami-devlog.vercel.app/"
   },
   "nav": [{
-    "title": "home",
+    "title": "首頁",
     "url": "/"
   },
   {
-    "title": "posts",
+    "title": "文章",
     "url": "/posts"
   },
   {
-    "title": "about",
+    "title": "關於我",
     "url": "/about"
   }],
   "config": {
