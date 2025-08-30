@@ -1,26 +1,51 @@
 ---
-title: This is my first post
-description: This is a post on My Blog about agile frameworks.
-date: 2018-05-01
+title: 起始點
+description: 目前的想法和遊戲概念
+date: 2025-08-30
 tags:
-  - another tag
+  - comic game
 layout: layouts/post.njk
 ---
-Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
+我一直都很喜歡漫畫，特別是戰鬥類型的漫畫，但是在遊戲中我並沒有看到過有任何作品是有關漫畫並且有將其中的技巧使用出來的。所以我打算來自己做一個戰鬥漫畫主題遊戲。
 
-Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.
 
-## Section Header
+# 目前規劃
+感覺戰棋類的回合制會相對適合漫畫這個主題，但是要如何讓漫畫中靜態的分鏡藝術放到遊戲中呈現將會是一大難題。
 
-Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.
+## 劇情大綱
+玩家需要扮演漫畫家和編輯討論漫畫劇情，整個遊戲的目標是想辦法增加漫畫的人氣，所以有時候評斷優劣的不會是戰鬥的技巧，反而幽默或是驚喜地展開會獲得更好的報酬。如果人氣沒有達標的話將會被腰斬，玩家就需要重新開始遊戲。
 
-```diff-js
-// this is a command
-function myCommand() {
-+	let counter = 0;
-+	counter++;
-}
+## 遊戲系統
 
-// Test with a line break above this line.
-console.log('Test');
-```
+### 人設和職業
+
+在遊戲一開始 玩家可以放入人設標籤和角色職業來初始化自己的角色，這些標籤會有正向的標籤像是(勇敢，正直)，同時也會有負面的標籤(懶惰)，這些標籤會影響劇情過渡的階段能夠選擇的選項且不一定正面的就會得到比較好的報酬。而角色職業(狙擊手，自行車騎士)會影響戰鬥階段玩家能夠使用的技能。
+
+而這些人設的標籤和職業將在玩家持續遊玩中解鎖
+
+### 戰鬥階段
+在遊戲的戰鬥階段玩家大多數需要擔任主角的一方來對抗擔任編輯的一方，有些時候則是相反的(這個之後再設計)。在正常的戰鬥階段期間玩家需要將敵人血量歸零來取得勝利，同時都會有需要額外完成的任務目標，像是使出某某招式攻擊某某敵人，已取得增加人氣的報酬。
+
+>其實關於要不要用血量來當系統考慮的很久，本來是打算讓玩家完成指定目標來結束戰鬥，這樣更像一般漫畫的展開。\
+> 但是我覺得目前的系統有點太複雜了先簡化成大眾習慣的樣子比較好
+
+在執行戰鬥的同時編輯也會放出招式針對玩家的角色，玩家也需要同時躲避敵人攻擊避免自己主角團的角色死亡，如果有角色死亡人氣將會大跌。
+
+> 關於玩家操作的主角 或許可以讓他永遠不會死 類似主角光環的效果
+
+### 過度劇情階段
+戰鬥階段結束後會跳出一些過度的劇情，在這個階段期間主角團可以會認識不一樣的角色提供他們幫助，也有可能會是加強主角團能力的劇情。
+
+# 目前的困境
+
+## 美術
+
+我可以說從來沒有認真的學習美術相關知識或技巧過，不管是2D還是3D，所以我必須選一個學習來完成這個作品。在相對了解渲染知識的情況下，先學習3D建模應該會是個蠻不錯的選擇。 但是UI可能就需要多花點時間來思考怎麼完成。
+
+目前的規劃是3D建模完之後加上漫畫風的shader來當主要美術。
+
+## 文本與劇情
+
+已經不知道多久沒有寫作文之類的東西了，說實話我很難想像作文只有四級分的我能夠寫個超讚劇情出來，所以可以的話希望可以做個劇情占比沒這麼重的遊戲，像是Roguelike之類的。
+
+但是我想多練習寫些東東還是挺不錯的，總是會用到，所以其實這個網站主要就是因為這個原因才架設，希望能夠在未來增進自己的文筆。
