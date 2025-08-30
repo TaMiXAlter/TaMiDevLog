@@ -13,21 +13,31 @@
     <meta property="og:url" content="{{ metadata.url + page.url.slice(1) }}">
     <meta property="og:title" content="{{ title or metadata.title }}">
     <meta property="og:description" content="{{ description or metadata.description }}">
-
     <meta property="twitter:card" content="summary">
     <meta property="twitter:url" content="{{ metadata.url + page.url.slice(1) }}">
     <meta property="twitter:title" content="{{ title or metadata.title }}">
     <meta property="twitter:description" content="{{ description or metadata.description }}">
   </head>
   <body>
-    <header>
-      {%- for entry in metadata.nav %}
-        <span class="{% if entry.url == page.url %} active{% endif %}"><a href="{{ entry.url | url }}">{{ entry.title }}</a>{% if not loop.last %} - {% endif %}</span>
-      {%- endfor %}
-    </header>
-
-    <main{% if templateClass %} class="{{ templateClass }}"{% endif %}>
-      {{ content | safe }}
-    </main>
+    <div class="content-wrapper">
+      <header>
+        <a href="{{ '/' | url }}" class="logo">TaMi DevLog</a>
+      </header>
+      <main{% if templateClass %} class="{{ templateClass }}"{% endif %}>
+        {{ content | safe }}
+        
+        {%- if page.url == '/' %}
+        <section class="about-section">
+          <h2>關於這個網站</h2>
+          <p>歡迎! 這裡通常會分享一些有關目前遊戲開發的進度或是一些心得</p>
+          <p>做這個網站是為了要讓自己的文筆變得更好 同時在寫的時候可以重新審視自己在做的東西</p>
+          
+          
+          <h3> 聯絡方式 </h3>
+          <p>Email: gary321588@gmail.com</p>
+        </section>
+        {%- endif %}
+      </main>
+    </div>
   </body>
 </html>

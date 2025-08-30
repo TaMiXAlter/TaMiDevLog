@@ -11,14 +11,6 @@
   "nav": [{
     "title": "首頁",
     "url": "/"
-  },
-  {
-    "title": "文章",
-    "url": "/posts"
-  },
-  {
-    "title": "關於我",
-    "url": "/about"
   }],
   "config": {
     "showDateList": true,
