@@ -49,8 +49,8 @@ float SobelNormal(float2 uv, float2 texelSize) {
 ```
 
 外框線:
-![alt text](..\..\img\OutlineAndShadow\image.png)
-就可以得到這樣的結果
+![alt text](../img/OutlineAndShadow/image.png)
+
 
 ## 陰影
 
@@ -82,6 +82,6 @@ float SobelNormal(float2 uv, float2 texelSize) {
 DepthNormals 當然還有重要的 ShadowCaster，最後在 frag 裡面只渲染純色就可以了。
 
 最後結果:
-![alt text](..\..\img\OutlineAndShadow\image-1.png)
+![alt text](../img/OutlineAndShadow/image-1.png)
 
 整體看起來挺不錯的但是過於複雜的模型會變得很奇怪。
