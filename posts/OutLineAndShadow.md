@@ -3,7 +3,7 @@ title: 外框線和線段陰影
 description: Sobel 算子 和 URP 光線
 date: 2025-09-08
 tags:
-  - comic game
+  - unity
 layout: layouts/post.njk
 ---
 鑒於我的遊戲是以漫畫為主題，同時我又希望可以減少自己在建模上的loading，所以我決定做一個類似漫畫線稿的視覺風格。因此外框線和線段陰影便是其中最重要的東西。
